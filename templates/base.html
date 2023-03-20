@@ -1,0 +1,22 @@
+{% load static %}
+
+
+
+
+<html>
+  <head>
+    <title>{% block title %} {% endblock %}</title>
+    
+    <link rel="stylesheet" herf="{% static 'main.css' %}">
+    {% block css_files %}
+    {% endblock %}
+  <style>
+ 
+</style>
+  </head>
+
+  <body>
+    {% block content%} 
+    {% endblock %}
+  </body>
+</html>
